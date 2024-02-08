@@ -1,0 +1,18 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: brown;
+  display: inline;
+  color: black;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin: 150px 150px;
+  padding: 5px;
+  border: 2px solid white;
+  text-align: center;
+}
