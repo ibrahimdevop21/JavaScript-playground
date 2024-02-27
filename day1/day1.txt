@@ -1,0 +1,64 @@
+variables in js are decleared with var, let, const 
+data type in js are devided into two catgories primtive types and object type
+--primtive type
+
+- numbers real , integer
+- string inside " , '
+- boolian treu, false
+- spicial value null, undifinde
+-- object type
+- array [] 0 indexed accesed with [element index]
+- object {} accessed with . or []
+?? set object map object regexp date type errors dunction an classes
+when we use a function on an object we call them method
+there are a set of of predifned methode to use as needed and we can also difine or own 
+methode and use them on object as needed with the "this" keyword 
+‘Technically, it is only
+JavaScript objects that have methods. But numbers, strings, boolean, and
+symbol values behave as if they have methods. In JavaScript, null and
+undefined are the only values that methods cannot be invoked on.
+In addition to these basic arithmetic operators, JavaScript supports more
+complex mathematical operations through a set of functions and constants
+defined as properties of the Math object:
+
+Math.pow(2,53)           // => 9007199254740992: 2 to the power 53
+Math.round(.6)           // => 1.0: round to the nearest integer
+Math.ceil(.6)            // => 1.0: round up to an integer
+Math.floor(.6)           // => 0.0: round down to an integer
+Math.abs(-5)             // => 5: absolute value
+Math.max(x,y,z)          // Return the largest argument
+Math.min(x,y,z)          // Return the smallest argument
+Math.random()            // Pseudo-random number x where 0 <= x < 1.0
+Math.PI                  // π: circumference of a circle / diameter
+Math.E                   // e: The base of the natural logarithm
+Math.sqrt(3)             // => 3**0.5: the square root of 3
+Math.pow(3, 1/3)         // => 3**(1/3): the cube root of 3
+Math.sin(0)              // Trigonometry: also Math.cos, Math.atan, etc.
+Math.log(10)             // Natural logarithm of 10
+Math.log(100)/Math.LN10  // Base 10 logarithm of 100
+Math.log(512)/Math.LN2   // Base 2 logarithm of 512
+Math.exp(3)              // Math.E cubed
+
+hopfully i'll never have to use them, The not-a-number value has one unusual feature in JavaScript: it does
+not compare equal to any other value, including itself. This means
+that you can’t write x === NaN to determine whether the value of a
+variable x is NaN. Instead, you must write x != x or
+Number.isNaN(x). Those expressions will be true if, and only if, x
+has the same value as the global constant NaN.
+
+The global function isNaN() is similar to Number.isNaN(). It
+returns true if its argument is NaN, or if that argument is a
+non-numeric value that cannot be converted to a number. The related
+function Number.isFinite() returns true if its argument is a
+number other than NaN, Infinity, or -Infinity. The global
+isFinite() function returns true if its argument is, or can be
+converted to, a finite number.
+
+The negative zero value is also somewhat unusual. It compares equal (even using
+JavaScript’s strict equality test) to positive zero, which means that the two
+values are almost indistinguishable, except when used as a divisor:
+
+let zero = 0;         // Regular zero
+let negz = -0;        // Negative zero
+zero === negz         // => true: zero and negative zero are equal
+1/zero === 1/negz     // => false: Infinity and -Infinity are not equal
